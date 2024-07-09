@@ -51,7 +51,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-height: 100vh;
+    height: 100vh;
     margin: auto;
 }
 
@@ -60,7 +60,8 @@ body {
     max-height: 21rem;
     display: flex;
     padding: 1rem 2.25rem;
-    border: solid 4px black;
+    border: solid 2px black;
+    border-radius: 1rem;
 }
 
 .details-container {
@@ -69,17 +70,15 @@ body {
     flex-flow: column;
 }
 
-.details-container > * {
-    margin-bottom: 1.5rem;
-} 
+
 #show-name {
     font-size: 1.5rem;
 }
 
 .img-container {
-    /* max-height: 100%; */
     border: 1px solid red;
-    padding: 0.5rem;
+    padding: 0.2rem;
+    border-radius: 0.5rem;
 }
 img {
     max-width: 100%;

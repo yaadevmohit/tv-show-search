@@ -53,6 +53,7 @@ body {
     justify-content: center;
     height: 100vh;
     margin: auto;
+    background-color: #2b3467;
 }
 
 .movie-container {
@@ -62,6 +63,11 @@ body {
     padding: 1rem 2.25rem;
     border: solid 2px black;
     border-radius: 1rem;
+    --bg-clr-cream: #fcffe7;
+    background-color: var(--bg-clr-cream);
+    --bg-clr-pink: #eb445f;
+    --font-clr-primary: #1f2860;
+    color: #2b3467;
 }
 
 .details-container {
@@ -77,10 +83,11 @@ body {
 
 .img-container {
     border: 1px solid red;
-    padding: 0.2rem;
-    border-radius: 0.5rem;
-}
-img {
+    padding: 0.1rem;
+    --img-border-radius: 0.3rem;
+    border-radius: calc(var(--img-border-radius) + 0.01rem);
+  }
+  img {
     max-width: 100%;
     vertical-align: middle;
     font-style: italic;
@@ -88,4 +95,16 @@ img {
     background-size: cover;
     shape-margin: 1rem;
     height: auto;
+    border-radius: var(--img-border-radius);
 }
+
+.btn-container > button {
+  background-color: var(--bg-clr-pink);
+  border: none;
+  color: var(--bg-clr-cream);
+  border-radius: 0.4rem;
+  padding: 0.2rem 0.4rem;
+  cursor: pointer;
+  letter-spacing: 0.05rem;
+}
+
